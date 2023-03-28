@@ -1,0 +1,279 @@
+:root{
+    --primary-color:#222120;
+    --bg-color: #F8F3ED;
+    font-size: 9px;
+}
+
+.container{
+    max-width: 85%;
+}
+
+.middle-vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+.ps-md-100{
+    padding-left: 100px;
+}
+
+
+
+h1, h2, h3, h4, h5, h6, .btn{
+    font-family: 'Prata';
+    font-style: normal;
+    font-size: 8.2rem;
+    line-height: 8.1rem;
+    letter-spacing: -0.02em;
+    color: var(--primary-color);
+}
+
+h2{
+    font-size: 7rem;
+    line-height: 7.6rem;
+  }
+  
+  h3{
+    font-size: 6rem;
+    line-height: 7.2rem;
+  }
+  
+  h4{
+    font-size: 5.2rem;
+    line-height: 6.1rem;
+  }
+  
+  h5{
+    font-size: 5rem;
+    line-height: 6.2rem;
+  }
+  
+  h6{
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  
+  .btn{
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+  
+  p{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: var(--primary-color);
+    opacity: 0.6;
+  }
+
+
+hr.style{
+    border-right: none;
+    border-left: none;
+}
+
+hr.style::before ,  hr.style::after{
+    content: "";
+    display: block;
+    height: 10px;
+    border: 0.5px solid white;
+    opacity: 0.6;
+ }
+
+/* style2 3 line khong deu */
+
+ .style2{
+    width: 80%;
+    border-left: none;
+    border-right: none;
+    height: 10px;
+    margin: 0 auto;
+    position: relative;
+    border-top: 1px solid var(--bg-color);
+  }
+  
+  .style2::before, .style2::after{
+    content: "";
+    width: 80%;
+    height: 10px;
+    display: block;
+    position: absolute;
+    background: transparent;
+    border-top: 1px solid var(--bg-color);
+    top: 0;
+    left: 50%;
+    overflow: auto;
+  }
+  
+  .style2::before{
+    transform: translate(-50%, -100%) ;
+  }
+  
+  .style2::after{
+    border-top: none;
+    border-bottom: 1px solid var(--bg-color);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* end style2 3 line khong deu */
+
+img{
+    width: 100%;
+}
+
+
+.block1{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+
+.hero{
+    position: relative;
+}
+
+.window img{
+    position: absolute;
+    width: 184px;
+    height: 232px;
+    transform: translateY(30%);
+}
+
+.stories{
+    background-color: var(--bg-color);
+    padding-top: 100px  ;
+}
+
+.dining{
+    position: relative;
+}
+
+.text_dining{
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+}
+
+.dos_dining{
+    position: absolute;
+
+    right:  10%;
+    bottom: 15%;
+}
+
+.dos_dining p{
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 10px;
+
+}
+
+p.dos_child{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p.dos_children{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    
+}
+
+.designer{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.acticle{
+    background-color: var(--bg-color);
+}
+
+.footer{
+    background: var(--primary-color);
+    
+}
+
+.fa-solid, .fas {
+    font-weight: 900;
+    width: 10px;
+    height: 10px;
+    color: white;
+}
+
+#logo_footer{
+    display: none;
+}
+
+.contact_footer img{
+    width: 97px;
+    height: 61px;
+}
+
+@media screen and (max-width: 400px) {
+    .ps-md-100{
+      padding: 0;
+    }
+  
+    h1, h2, h3, h4, h5, h6, p, .btn{
+      line-height: normal !important;
+    }
+    h1{
+      font-size: 4.6rem;
+    }
+    h2{
+      font-size: 4.6rem;
+    }
+    
+    h3{
+      font-size: 3.6rem;
+    }
+    
+    h4{
+      font-size: 3.2rem;
+    }
+    
+    h5{
+      font-size: 2rem;
+    }
+   
+    p, h6, .btn{
+      font-size: 1.8rem;
+    }
+  
+    .window img{
+      left: 50% !important ;
+      top: 0 !important;
+      transform: translateY(50%) !important;
+    }
+
+    .footer .go_top{
+        display: none;
+    }
+
+    #logo_footer{
+        display: block;
+        width: 87px;
+        height: 55px;
+        margin: 0 auto;
+    }
+
+    .contact_footer img{
+        display: none;
+    }
+
+    .hide_on_mobile{
+      display: none;
+    }
+    
+  }
